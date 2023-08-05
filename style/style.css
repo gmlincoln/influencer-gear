@@ -1,6 +1,125 @@
-/* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Poppins:wght@400;600;700&display=swap');
 
+
+*{
+    margin:0;
+}
 body{
     font-family: 'Poppins', sans-serif;
+}
+main{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+/* Popular Collection Style */
+
+
+/* Feature Style */
+.feature-products{
+    display: flex;
+    flex-direction: row;
+    gap: 95px;
+    padding: 100px 0;
+}
+
+.feature-content h3{
+    color: #0A0826;
+    font-size: 38px;
+    font-weight: 700;
+}
+.feature-content p{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 16px;
+}
+.feature-content button{
+    background: #E02C6D;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    padding: 15px 24px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+.feature-content button>i{
+    margin-left: 10px;
+}
+
+/* Footer Style */
+footer{
+    background: #0A0826;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+.footer h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+.footer p{
+    color: #D9DBE1;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+
+}
+.social-icon{
+    margin-top: 15px;
+}
+
+.social-icon i{
+    color: #fff;
+    padding: 15px;
+    background-color: #22213C;
+    border-radius: 50%;
+    font-size: 32px;
+    height: 32px;
+    width: 32px;
+    margin-right: 15px;
+}
+
+/*Responsive Style  */
+
+@media screen and (max-width: 576px) {
+    .feature-products{
+        flex-direction: column-reverse;
+        gap: 30px;
+        padding: 100px 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: center;
+    }
+    .feature-content{
+        text-align: center;
+    }
+    .feature-content h3{
+        font-size: 24px;
+    }
+    .feature-content p{
+        font-size: 16px;
+    }
+    .feature-img img{
+        width: 100%;
+    }
+
+    .footer h3{
+        font-size: 16px;
+    }
+    .footer p{
+        font-size: 12px;
+    }
+    .social-icon i{
+        color: #fff;
+        padding: 10px;
+        background-color: #22213C;
+        border-radius: 50%;
+        font-size: 24px;
+        height: 24px;
+        width: 24px;
+        margin-right: 10px;
+    }
+    
 }
